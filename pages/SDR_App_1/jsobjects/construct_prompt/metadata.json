@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "construct_prompt",
+    "pageId": "SDR_App_1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "SDR_App_1_construct_prompt",
+  "deleted": false,
+  "gitSyncId": "65ee8ef55685a51530f9ef73_65ee98c85685a51530f9ef81"
+}

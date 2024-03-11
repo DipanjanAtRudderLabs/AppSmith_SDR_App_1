@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "populateEmailBody",
+    "pageId": "SDR_App_1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "SDR_App_1_populateEmailBody",
+  "deleted": false,
+  "gitSyncId": "65ee8ef55685a51530f9ef73_65eea0695685a51530f9ef8a"
+}

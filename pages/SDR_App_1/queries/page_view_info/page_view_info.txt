@@ -1,0 +1,21 @@
+with page_view_table as (-- You can use with page_view_table as (
+  select 
+    title, count(*) as view_count
+  from
+    rudder_autotrack_data.autotrack.pages
+  where
+    anonymous_id in (
+        select 
+            anonymous_id 
+        from 
+            rudder_autotrack_data.autotrack.form_submit 
+        where 
+            email = '{{Input1.value}}'
+        and
+            timestamp = (select min(timestamp) from rudder_autotrack_data.autotrack.form_submit where email = '{{Input1.value}}' )
+     )
+    group by title
+
+  ) 
+  
+  select title from page_view_table order by view_count desc limit 3

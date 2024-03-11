@@ -1,0 +1,3 @@
+select name, title, clearbit_company_name_c, clearbit_company_category_industry_c, clearbit_company_metrics_employees_c
+from common.public.sf_lead_var_table 
+where lead_id = (select sf_lead_id from common.public.user_base_features where email_latest = '{{Input1.value}}')
